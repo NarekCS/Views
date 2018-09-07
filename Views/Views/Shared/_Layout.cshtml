@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link asp-href-include="lib/bootstrap/dist/css/*.min.css" rel="stylesheet" />    
+</head>
+<body class="m-1 p-1">
+    @RenderSection("Header")
+    <div class="bg-info">
+        This is part of the layout
+    </div>
+    @RenderSection("Body")
+    <div class="bg-info">
+        This is part of the layout
+    </div>
+    @RenderSection("Footer", false)
+    @RenderSection("scripts", false)
+    <div class="bg-info">
+        This is part of the layout
+    </div>   
+</body>
+</html>
